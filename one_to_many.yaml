@@ -1,0 +1,12 @@
+Article:
+   fields:
+       title: varchar(50)
+       text: text
+   relations:
+       Category: one
+
+Category:
+   fields:
+       title: varchar(50)
+   relations:
+       Article: many
